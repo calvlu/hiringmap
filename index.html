@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Job postings on Indeed, United States</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.min.css" rel="stylesheet">
+<script async defer src="https://api.mapbox.com/mapbox-assembly/v0.24.0/assembly.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<style>
+    b {
+        font-weight: bold;
+        font-size: 1.17em;
+        color: black;
+
+    }
+    .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        position: absolute;
+        width: 25%;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    .map-overlay .map-overlay-inner {
+        background-color: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .map-overlay h2 {
+        line-height: 24px;
+        display: block;
+        margin: 0 0 10px;
+    }
+
+    .map-overlay .legend .bar {
+        height: 10px;
+        width: 100%;
+        background: linear-gradient(to right, #fca107, #7f3121);
+    }
+
+    .map-overlay input {
+        background-color: transparent;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        cursor: ew-resize;
+    }
+</style>
+
+<div id="map">
+    <div id="legend" class="my36 mx12 px12 py12 absolute z1 right w300-ml bottom bg-white round-ml shadow-darken10 none">
+    <strong class='block mb6'>% change in job postings since Feb 2020</strong>
+    <div id="legend-colors" class="grid mb6"></div>
+    <div id="legend-values" class="grid txt-xs"></div>
+    </div>
+</div>
+<div class="map-overlay top">
+    <div class="map-overlay-inner">
+        <h2>% change in job postings since Feb 2020, seasonally adjusted, to Mar 2021</h2>
+        <label id="month"></label>
+        <input id="slider" type="range" min="0" max="13" step="1" value="0">
+    </div>
+
+</div>
+
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="map.js">
+</script>
+
+</body>
+</html>

@@ -3,9 +3,9 @@
       container: 'map',
       style: 'mapbox://styles/calvlu/ckm0jta9h3az217ovunmyuqjp',
       center: [-3.632, 0.339],
-      zoom: 4.3,
-      scrollZoom: false,
-      dragPan: false
+      zoom: 4.3
+      //scrollZoom: false,
+      //dragPan: false
     });
 
     var months = [

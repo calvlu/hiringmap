@@ -1,5 +1,5 @@
-# hiringmap
+# hiring map
  
-![Alt text](hiringplot.png)
+[![Alt text](hiring.gif)](https://calvlu.github.io/hiringmap/)
 
-![Alt text](hiring.gif)
+![Alt text](hiringplot.png)
